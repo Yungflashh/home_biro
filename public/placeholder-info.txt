@@ -1,0 +1,39 @@
+PLACEHOLDER IMAGES GUIDE
+========================
+
+Please replace these placeholders with your actual images:
+
+1. HERO SECTION (components/Hero.tsx)
+   - Image: Model pointing to roll-up stand
+   - Recommended size: 1200x1200px
+   - Format: JPG or PNG
+   - Path: /public/images/hero-model.jpg
+
+2. COMPARISON SECTION (components/WhyChooseUs.tsx)
+   - Image: Traditional vs Homebiro comparison chart
+   - Recommended size: 1400x800px
+   - Format: JPG or PNG
+   - Path: /public/images/comparison-chart.jpg
+
+3. FEATURES SECTION (components/Features.tsx)
+   - Image: Legal guide book cover
+   - Recommended size: 800x1000px
+   - Format: JPG or PNG
+   - Path: /public/images/book-cover.jpg
+
+HOW TO ADD YOUR IMAGES:
+1. Place images in /public/images/ folder
+2. Update the component files to reference your images
+3. Use Next.js Image component for optimization:
+   
+   import Image from 'next/image'
+   <Image 
+     src="/images/your-image.jpg" 
+     alt="Description"
+     width={1200}
+     height={800}
+     priority
+   />
+
+The placeholders are currently using gradient backgrounds with icons.
+Replace them with your actual images for the complete design.
