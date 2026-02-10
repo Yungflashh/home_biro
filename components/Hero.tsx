@@ -35,9 +35,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-bricolage font-bold text-5xl md:text-6xl lg:text-7xl leading-tight"
             >
-              Guaranteed Outcome on{' '}
+              All in One Tenant {' '}
               <span className="text-gradient">
-                Your Real Estate Request
+                Concierge Service
               </span>
             </motion.h1>
 
@@ -61,7 +61,7 @@ export default function Hero() {
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 gradient-blue text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all shine"
+                className="px-2 py-4 gradient-blue text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all shine"
               >
                 START HUNTING TODAY
               </motion.button>
@@ -69,7 +69,7 @@ export default function Hero() {
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white border-2 border-primary-600 text-primary-600 rounded-full font-bold text-lg hover:bg-primary-50 transition-all flex items-center justify-center space-x-2"
+                className="px-2 py-4 bg-white border-2 border-primary-600 text-primary-600 rounded-full font-bold text-lg hover:bg-primary-50 transition-all flex items-center justify-center space-x-2"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
@@ -78,26 +78,7 @@ export default function Hero() {
               </motion.button>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200"
-            >
-              {[
-                { value: '500+', label: 'Happy Tenants' },
-                { value: '30 Days', label: 'Guarantee' },
-                { value: '100%', label: 'Satisfaction' },
-              ].map((stat, index) => (
-                <div key={index} className="text-center sm:text-left">
-                  <div className="font-bricolage font-bold text-3xl md:text-4xl text-primary-600">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
+           
           </div>
 
           {/* Right Image */}
@@ -120,27 +101,6 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Floating Elements */}
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -top-6 -right-6 w-24 h-24 bg-white rounded-2xl shadow-xl p-4 flex items-center justify-center"
-            >
-              <div className="text-center">
-                <div className="text-2xl">🏆</div>
-                <div className="text-xs font-semibold mt-1">Verified</div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-              className="absolute -bottom-6 -left-6 w-32 h-32 bg-white rounded-2xl shadow-xl p-4"
-            >
-              <div className="text-2xl mb-2">✨</div>
-              <div className="text-xs font-bold">No Agent Fees</div>
-              <div className="text-xs text-gray-500 mt-1">Save thousands</div>
-            </motion.div>
           </motion.div>
         </div>
       </div>

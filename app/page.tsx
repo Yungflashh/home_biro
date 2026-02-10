@@ -13,8 +13,8 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <Features />
-      <Testimonials />
       <WorkWithUs />
+      <Testimonials />
       <Footer />
     </main>
   )

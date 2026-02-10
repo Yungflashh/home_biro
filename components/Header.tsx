@@ -16,9 +16,11 @@ export default function Header() {
   }, [])
 
   const menuItems = [
+    { name: 'About', href: '#solution' },
     { name: 'Solution', href: '#solution' },
     { name: 'Pricing', href: '#pricing' },
-    { name: 'Contact Us', href: '#work-with-us' },
+    { name: 'Work With HomeBiro', href: '#pricing' },
+    { name: 'Our cities', href: '#pricing' },
   ]
 
   return (
@@ -34,51 +36,80 @@ export default function Header() {
     >
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-2"
-          >
-            <div className="w-10 h-10 rounded-xl gradient-blue flex items-center justify-center">
-              <span className="text-white font-bold text-xl">H</span>
-            </div>
-            <span className="font-bricolage font-bold text-2xl text-gray-900">
-              Homebiro
-            </span>
-          </motion.div>
+          {/* Logo and Menu Items */}
+          <div className="flex items-center space-x-6">
+            {/* Logo */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center space-x-2"
+            >
+              <div className="w-10 h-10 rounded-xl gradient-blue flex items-center justify-center">
+                <span className="text-white font-bold text-xl">H</span>
+              </div>
+              <span className="font-bricolage font-bold text-2xl text-gray-900">
+                Homebiro
+              </span>
+            </motion.div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item, index) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-                whileHover={{ y: -2 }}
-              >
-                {item.name}
-              </motion.a>
-            ))}
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex items-center space-x-6">
+              {menuItems.map((item, index) => (
+                <motion.a
+                  key={item.name}
+                  href={item.href}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="text-gray-700 hover:text-primary-600 font-medium transition-colors whitespace-nowrap"
+                  whileHover={{ y: -2 }}
+                >
+                  {item.name}
+                </motion.a>
+              ))}
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="hidden lg:flex items-center space-x-3">
             <motion.a
               href="mailto:support@homebiro.com"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="px-6 py-2.5 gradient-blue text-white rounded-full font-semibold hover:shadow-lg transition-all shine"
+              className="px-5 py-2.5 gradient-blue text-white rounded-full font-semibold hover:shadow-lg transition-all shine whitespace-nowrap"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Support
+            </motion.a>
+            <motion.a
+              href="mailto:support@homebiro.com"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="px-5 py-2.5 gradient-blue text-white rounded-full font-semibold hover:shadow-lg transition-all shine whitespace-nowrap"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Start Hunting
+            </motion.a>
+            <motion.a
+              href="#download"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="px-5 py-2.5 bg-gray-900 text-white rounded-full font-semibold hover:shadow-lg transition-all whitespace-nowrap"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Download Our App
             </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100"
           >
             <svg
               className="w-6 h-6"
@@ -111,7 +142,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden pt-4 pb-2"
+            className="lg:hidden pt-4 pb-2"
           >
             <div className="flex flex-col space-y-3">
               {menuItems.map((item) => (
@@ -129,6 +160,18 @@ export default function Header() {
                 className="px-6 py-2.5 gradient-blue text-white rounded-full font-semibold text-center"
               >
                 Support
+              </a>
+              <a
+                href="mailto:support@homebiro.com"
+                className="px-6 py-2.5 gradient-blue text-white rounded-full font-semibold text-center"
+              >
+                Start Hunting
+              </a>
+              <a
+                href="#download"
+                className="px-6 py-2.5 bg-gray-900 text-white rounded-full font-semibold text-center"
+              >
+                Download Our App
               </a>
             </div>
           </motion.div>
