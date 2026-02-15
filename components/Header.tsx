@@ -71,7 +71,7 @@ export default function Header() {
 
           {/* Action Buttons */}
           <div className="hidden lg:flex items-center space-x-3">
-            <motion.a
+            {/* <motion.a
               href="mailto:support@homebiro.com"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
             >
               Support
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="mailto:support@homebiro.com"
               initial={{ opacity: 0, y: -20 }}
@@ -155,12 +155,12 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
-              <a
+              {/* <a
                 href="mailto:support@homebiro.com"
                 className="px-6 py-2.5 gradient-blue text-white rounded-full font-semibold text-center"
               >
                 Support
-              </a>
+              </a> */}
               <a
                 href="mailto:support@homebiro.com"
                 className="px-6 py-2.5 gradient-blue text-white rounded-full font-semibold text-center"

@@ -24,9 +24,7 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="inline-block"
             >
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold">
-                🏠 Your Trusted Tenant Concierge
-              </span>
+             
             </motion.div>
 
             <motion.h1

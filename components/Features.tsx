@@ -10,32 +10,33 @@ export default function Features() {
 
   const features = [
     {
-      icon: '🗺️',
-      title: 'Pre-Move Neighbourhood Tours',
-      description: 'We introduce you to neighbourhood tours so you don\'t have to request to hunt houses in an area you won\'t like. We discuss power grid, security, and amenities in each region.',
-      image: '🏘️'
-    },
-    {
       icon: '🤝',
-      title: 'Concierge Full Experience',
+      title: 'Post roomate Request',
       description: 'No agent extortions, lies, or fake apartment listings. Connect directly with our Managed Tenant Concierge in cities across the region.',
       image: '👔'
     },
     {
+      icon: '🗺️',
+      title: 'Neighbourhood Tours',
+      description: 'We introduce you to neighbourhood tours so you don\'t have to request to hunt houses in an area you won\'t like. We discuss power grid, security, and amenities in each region.',
+      image: '🏘️'
+    },
+    
+    {
       icon: '📚',
-      title: 'Legal Protection',
+      title: 'The Full Concierge Experience',
       description: 'Our Free Book for Members "Landlord, Agent & Your Rights" protects your paperwork so you aren\'t cheated. Knowledge is power.',
       image: '⚖️'
     },
     {
       icon: '👥',
-      title: 'Roommate Match',
+      title: 'Protection',
       description: 'Request a compatible roommate match via our application. Find someone who shares your lifestyle and preferences.',
       image: '🤝'
     },
     {
       icon: '🔍',
-      title: 'Property Inspection',
+      title: 'Fee Structure',
       description: 'Thorough professional inspections of every property. We check everything from plumbing to electrical systems.',
       image: '🏠'
     }
@@ -48,18 +49,16 @@ export default function Features() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className=" mb-20"
         >
-          <span className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold">
+          <span className="px-4 py-2 text-left bg-primary-100 text-primary-700 rounded-full text-sm font-semibold">
             Why Choose Us
           </span>
-          <h2 className="font-bricolage font-bold text-4xl md:text-5xl lg:text-6xl mt-6 mb-4">
+          <h2 className="font-bricolage text-left font-bold text-4xl md:text-5xl lg:text-6xl mt-6 mb-4">
             We Make House Hunting{' '}
             <span className="text-gradient">Simple & Stress-Free</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the difference with our comprehensive apartment hunting solution
-          </p>
+         
         </motion.div>
 
         {/* Alternating Image-Text Layout */}
@@ -127,9 +126,12 @@ export default function Features() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-32 flex justify-center items-center overflow-hidden"
+          className="mt-32 flex flex-col items-center overflow-hidden bg-slate-900 p-40 rounded-[80px] w-[100%] text-white"
         >
-         <h2 className='text-[40px] text-center'>Become Our Certified Tenant Concierge and Earn Up To 100k Monthly</h2>
+         <h2 className='text-[40px] text-center '>Become Our Certified Tenant Concierge and Earn Up To 100k Monthly</h2>
+         <p className='text-[20px] m-12 text-center '>Help others avoid the chaos and build a career in professional real estate management.</p>
+
+         <button className='bg-white rounded-[40px] text-center text-black p-4 text-[20px] font-bold w-[350px] h-20'>JOIN OUR NETWORK</button>
         </motion.div>
       </div>
     </section>

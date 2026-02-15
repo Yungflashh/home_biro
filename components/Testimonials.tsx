@@ -9,27 +9,27 @@ export default function Testimonials() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      role: 'Marketing Executive',
-      image: '👩‍💼',
-      quote: 'Homebiro saved me from a terrible scam! The agent was trying to charge me 30% commission for a fake listing. The legal guide book helped me spot the red flags immediately.',
-      rating: 5
-    },
-    {
-      name: 'Michael Adebayo',
-      role: 'Software Engineer',
-      image: '👨‍💻',
-      quote: 'As a newcomer to Lagos, I was completely lost. Homebiro\'s neighbourhood tours showed me areas I would have never considered. Found my perfect home in 2 weeks!',
-      rating: 5
-    },
-    {
-      name: 'Chioma Okafor',
-      role: 'Doctor',
-      image: '👩‍⚕️',
-      quote: 'The concierge service is worth every penny. They handled everything - from inspections to negotiations. I didn\'t have to take a single day off work!',
-      rating: 5
-    },
+    // {
+    //   name: 'Sarah Johnson',
+    //   role: 'Marketing Executive',
+    //   image: '👩‍💼',
+    //   quote: 'Homebiro saved me from a terrible scam! The agent was trying to charge me 30% commission for a fake listing. The legal guide book helped me spot the red flags immediately.',
+    //   rating: 5
+    // },
+    // {
+    //   name: 'Michael Adebayo',
+    //   role: 'Software Engineer',
+    //   image: '👨‍💻',
+    //   quote: 'As a newcomer to Lagos, I was completely lost. Homebiro\'s neighbourhood tours showed me areas I would have never considered. Found my perfect home in 2 weeks!',
+    //   rating: 5
+    // },
+    // {
+    //   name: 'Chioma Okafor',
+    //   role: 'Doctor',
+    //   image: '👩‍⚕️',
+    //   quote: 'The concierge service is worth every penny. They handled everything - from inspections to negotiations. I didn\'t have to take a single day off work!',
+    //   rating: 5
+    // },
     {
       name: 'David Chen',
       role: 'Business Owner',
@@ -125,13 +125,23 @@ export default function Testimonials() {
             </div>
             <div className="h-12 w-px bg-gray-300"></div>
             <div className="text-center">
-              <div className="text-3xl font-bricolage font-bold text-primary-600">500+</div>
+              <div className="text-3xl font-bricolage font-bold text-primary-600">150+</div>
               <div className="text-sm text-gray-600">Happy Clients</div>
             </div>
             <div className="h-12 w-px bg-gray-300"></div>
             <div className="text-center">
               <div className="text-3xl font-bricolage font-bold text-primary-600">100%</div>
               <div className="text-sm text-gray-600">Verified Reviews</div>
+            </div>
+            <div className="h-12 w-px bg-gray-300"></div>
+            <div className="text-center">
+              <div className="text-3xl font-bricolage font-bold text-primary-600">30%</div>
+              <div className="text-sm text-gray-600">Refund Rates</div>
+            </div>
+            <div className="h-12 w-px bg-gray-300"></div>
+            <div className="text-center">
+              <div className="text-3xl font-bricolage font-bold text-primary-600">90%</div>
+              <div className="text-sm text-gray-600">Projects Completed</div>
             </div>
           </div>
         </motion.div>

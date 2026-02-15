@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
               Our <span className="text-gradient">Concierge Service</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-             Prices and Features Vary by State. <span className='text-blue-500'>Learn More</span>
+             Pricing and Features Vary by State. <span className='text-blue-500'>Learn More</span>
             </p>
           </motion.div>
 
@@ -80,10 +80,13 @@ export default function WhyChooseUs() {
             className="text-center"
           >
             <h2 className="font-bricolage font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6">
-              Homebiro <span className="text-gradient bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Services</span>
+              Making house hunting in cities stress-free for people.
             </h2>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              Premium apartment hunting solutions designed for modern renters
+              By connecting with our Service Representatives, we share our knowledge of your preferred neighbourhood and real-time data, and we are helping to improve our cities.
+            </p>
+            <p className=' text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mt-8'>
+              Our expansive city-wide netwrok is the backbone of our guranteed  delivery for client. We have become the "agent's agent". Local partners and industry expert rely on our hyper-local neighbourhood knowledge and exclusive hidden inventory to deliver what no one else can.
             </p>
           </motion.div>
         </div>
