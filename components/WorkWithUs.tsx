@@ -24,7 +24,6 @@ export default function MissionAbout() {
 
 
 
-
             
             <span className="px-4 py-2 text-center text-primary-700 rounded-full text-[20px] font-semibold shadow-md">
                About Us
