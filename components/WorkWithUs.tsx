@@ -20,7 +20,6 @@ export default function MissionAbout() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-
             
             <span className="px-4 py-2 text-center text-primary-700 rounded-full text-[20px] font-semibold shadow-md">
                About Us
